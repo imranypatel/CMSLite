@@ -1,0 +1,12 @@
+﻿@model IEnumerable<CMSLITE.Repository.Pages>
+<h2>
+    Index page</h2>
+@foreach (var m in Model)
+{
+    <ul>
+        <li>
+            @Html.ActionLink(@m.PageName, "PageEditor", "Admin")
+        </li>
+    </ul>
+        
+}

@@ -1,0 +1,20 @@
+﻿@model IEnumerable<CMSLITE.Repository.PageEditor>
+<h2>
+    Page Editor</h2>
+@foreach (var m in Model)
+{
+    <ul>
+        <li>
+            @*@m.PageEditor1*@
+
+            @if (m.PageEditorId == 1)
+            {
+                
+                @Html.TextBoxFor(modelItem => m.PageEditor1)
+            }
+            
+
+        </li>
+    </ul>
+        
+}
